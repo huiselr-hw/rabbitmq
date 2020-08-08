@@ -6,4 +6,7 @@ package cn.huiselr.utils;
  * @Description
  */
 public class MqUtils {
+    public static void main(String[] args) {
+
+    }
 }
