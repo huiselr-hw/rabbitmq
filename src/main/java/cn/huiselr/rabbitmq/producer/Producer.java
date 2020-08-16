@@ -31,7 +31,7 @@ public class Producer {
         channel.basicConsume("huiselr-pr",true,new DefaultConsumer(channel){
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
-                System.out.println("comsumer messgae -> " + new String(body).toString());
+                System.out.println("consumer message -> " + new String(body).toString());
             }
         });
     }
@@ -43,7 +43,7 @@ public class Producer {
         channel.basicConsume("huiselr-pr",true,new DefaultConsumer(channel){
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
-                System.out.println("comsumer messgae -> " + new String(body).toString());
+                System.out.println("consumer message -> " + new String(body).toString());
             }
         });
     }
